@@ -1,0 +1,6 @@
+<div>
+    <h2>User CSV Upload APP</h2>
+    <input type="file" (change)="onFileSelected($event)" accept=".csv" />
+    <button (click)="upload()">Upload</button>
+    <div *ngIf="error" class="error">{{ error }}</div>
+  </div>
